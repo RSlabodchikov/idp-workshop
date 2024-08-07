@@ -23,7 +23,6 @@ spec:
   type: service
   owner: xcloud
   lifecycle: experimental
-#  system: Demo
  dependsOn:
    - component:default/rslabodchikov-service
 #  consumesApis:
