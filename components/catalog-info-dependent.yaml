@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: rslabodchikov-service-dependency
   description: |
-    My Second service
+    My second service
   links:
     - title: Website
       url: http://harness.io
@@ -23,6 +23,7 @@ spec:
   type: service
   owner: xcloud
   lifecycle: experimental
+#  system: Demo
  dependsOn:
    - component:default/rslabodchikov-service
 #  consumesApis:
