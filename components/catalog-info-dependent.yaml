@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: rslabodchikov-service-dependency
   description: |
-    My Example service which has something to do with APIs and database.
+    My Second service
   links:
     - title: Website
       url: http://harness.io
