@@ -1,0 +1,15 @@
+# Build & runtime files
+target/
+*.log
+.flattened-pom.xml
+
+# Eclipse project files
+.settings/
+.project
+.classpath
+
+# IDEA project files
+.idea/
+*.iml
+*.ipr
+*.iws

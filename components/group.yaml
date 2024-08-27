@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: xcloud
+  description: XCloud group
+spec:
+  type: business-unit
+  profile:
+    displayName: XCloud
+    email: xlcoud@arlo.com
+  parent: harness_account_all_users
+  children: []
+  members: [rslabodchikov.c@arlo.com]
