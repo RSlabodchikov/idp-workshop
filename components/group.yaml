@@ -10,4 +10,4 @@ spec:
     email: xlcoud@arlo.com
   parent: harness_account_all_users
   children: []
-  members: [rslabodchikov.c@arlo.com]
+  members: [rslabodchikov.c]
