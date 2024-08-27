@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: xcloud-location
+  description: A collection of all XCloud POC entities, except users, groups, and templates
+spec:
+  targets:
+    - ./components/registration/component.yaml
