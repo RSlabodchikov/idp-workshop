@@ -18,3 +18,4 @@ spec:
   type: service
   owner: xcloud
   lifecycle: production
+  provides-api: registration-service-api

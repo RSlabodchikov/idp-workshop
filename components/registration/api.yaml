@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: registration
+  name: registration-service-api
   description: Registration REST APIs
   tags:
     - registration
