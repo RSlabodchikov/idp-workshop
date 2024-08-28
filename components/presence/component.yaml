@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: presence-service
+  description: |
+    Presence service
+  links:
+    - title: Template
+      url: http://arlo.com
+  annotations:
+    github.com/project-slug: harnessworkshop/idp-workshop
+    #    backstage.io/techdocs-ref:
+    lighthouse.com/website-url: https://arlo.com
+  tags:
+    - xcloud
+    - presence
+spec:
+  type: service
+  owner: xcloud
+  lifecycle: production
+  #providesApis:
+  #  - registration-service-api
+  system: XCloud

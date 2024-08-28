@@ -9,3 +9,4 @@ spec:
     - ./components/system.yaml
     - ./components/registration/component.yaml
     - ./components/registration/api.yaml
+    - ./components/presence/component.yaml
