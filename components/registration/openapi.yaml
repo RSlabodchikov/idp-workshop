@@ -1,0 +1,73 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Swagger Petstore
+  description: |-
+    This is a sample Registration Server service based on the OpenAPI 3.0 specification. 
+servers:
+  - url: http://localhost:8080/registration
+paths:
+  /status:
+    get:
+      summary: Get status of application
+      operationId: getStatus
+      tags:
+        - status
+      responses:
+        '200':
+          description: Application is running and healthy
+        default:
+          description: Unhealthy state
+          content:
+            text/plain:
+              schema:
+                type: string
+  /user:
+    post:
+      summary: Register a user
+      operationId: registerUser
+      tags:
+        - users
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      responses:
+        '200':
+          description: Expected response to a valid registration request
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Registered
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    User:
+      type: object
+      required:
+        - name
+        - email
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
