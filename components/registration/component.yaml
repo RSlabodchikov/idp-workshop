@@ -20,3 +20,4 @@ spec:
   lifecycle: production
   providesApis: 
     - registration-service-api
+  system: XCloud

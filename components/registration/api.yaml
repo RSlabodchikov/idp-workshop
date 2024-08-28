@@ -13,3 +13,4 @@ spec:
   owner: xcloud
   definition:
     $text: ./openapi.yaml
+  system: XCloud
