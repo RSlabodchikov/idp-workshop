@@ -5,6 +5,7 @@ metadata:
   description: A collection of all XCloud POC entities, except users, groups, and templates
 spec:
   targets:
+    - ./components/backend-domain.yaml
     - ./components/system.yaml
     - ./components/registration/component.yaml
     - ./components/registration/api.yaml

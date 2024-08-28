@@ -5,3 +5,4 @@ metadata:
   description: XCloud system
 spec:
   owner: xcloud
+  domain: backend
