@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: registration
+  description: Registration REST APIs
+  tags:
+    - registration
+    - xcloud
+    - openapi
+spec:
+  type: openapi
+  lifecycle: local
+  owner: xcloud
+  definition:
+    $text: ./openapi.yaml
