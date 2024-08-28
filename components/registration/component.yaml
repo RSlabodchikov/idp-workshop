@@ -9,7 +9,7 @@ metadata:
       url: http://arlo.com
   annotations:
     github.com/project-slug: harnessworkshop/idp-workshop
-    backstage.io/techdocs-ref: dir:../
+    backstage.io/techdocs-ref: url:https://www.arlo.com/en-us/
     lighthouse.com/website-url: https://arlo.com
   tags:
     - xcloud
