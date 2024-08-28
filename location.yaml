@@ -6,4 +6,4 @@ metadata:
 spec:
   targets:
     - ./components/registration/component.yaml
-    - - ./components/registration/api.yaml
+    - ./components/registration/api.yaml
