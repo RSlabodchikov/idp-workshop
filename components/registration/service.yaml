@@ -2,7 +2,8 @@ service:
   name: registration
   identifier: registration
   tags: {}
-  organization: arloidp311org
+  orgIdentifier: arloidp311org
+  projectIdentifier: XCloud
   serviceDefinition:
     spec:
       manifests:
