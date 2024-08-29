@@ -2,6 +2,7 @@ service:
   name: registration
   identifier: registration
   tags: {}
+  organization: arloidp311org
   serviceDefinition:
     spec:
       manifests:
