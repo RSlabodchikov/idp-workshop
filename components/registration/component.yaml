@@ -10,6 +10,10 @@ metadata:
   splunkErrorCount: 0
   annotations:
     github.com/project-slug: harnessworkshop/idp-workshop
+    harness.io/services: |
+      registration: https://app.harness.io/ng/account/IFG41DWvSnaRLOVNB2uesg/cd/orgs/arloidp311org/projects/XCloud/services/registration
+    harness.io/pipelines: |
+      registrationCI: https://workshop.harness.io/ng/account/IFG41DWvSnaRLOVNB2uesg/module/ci/orgs/arloidp311org/projects/XCloud/pipelines/registrationbuild/pipeline-studio/?storeType=REMOTE&connectorRef=rslabodchikov&repoName=idp-workshop&branch=main
 #    backstage.io/techdocs-ref: 
     lighthouse.com/website-url: https://arlo.com
   tags:
