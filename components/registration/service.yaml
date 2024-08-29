@@ -1,0 +1,10 @@
+service:
+  name: registration
+  identifier: registration
+  tags: {}
+  serviceDefinition:
+    spec:
+      manifests:
+      variables:
+    type: Kubernetes
+  description: sample registration service
