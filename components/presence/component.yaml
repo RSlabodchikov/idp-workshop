@@ -11,6 +11,7 @@ metadata:
     github.com/project-slug: harnessworkshop/idp-workshop
     #    backstage.io/techdocs-ref:
     lighthouse.com/website-url: https://arlo.com
+  splunkErrorCount: 0
   tags:
     - xcloud
     - presence
