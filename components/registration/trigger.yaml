@@ -1,9 +1,9 @@
 trigger:
-  name: github-trigger
-  identifier: githubtrigger
+  name: registration-build-trigger
+  identifier: registrationbuildtrigger
   enabled: true
   encryptedWebhookSecretIdentifier: ""
-  description: "github trigger"
+  description: ""
   tags: {}
   orgIdentifier: arloidp311org
   stagesToExecute: []
