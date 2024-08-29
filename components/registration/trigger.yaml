@@ -23,7 +23,7 @@ trigger:
           actions: []
   inputYaml: |
     pipeline:
-      identifier: registrationtest
+      identifier: registrationbuild
       properties:
         ci:
           codebase:
