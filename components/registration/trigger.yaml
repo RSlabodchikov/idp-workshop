@@ -1,0 +1,33 @@
+trigger:
+  name: github-trigger
+  identifier: githubtrigger
+  enabled: true
+  encryptedWebhookSecretIdentifier: ""
+  description: "github trigger"
+  tags: {}
+  orgIdentifier: arloidp311org
+  stagesToExecute: []
+  projectIdentifier: XCloud
+  pipelineIdentifier: registrationbuild
+  source:
+    type: Webhook
+    spec:
+      type: Github
+      spec:
+        type: Push
+        spec:
+          connectorRef: rslabodchikov
+          autoAbortPreviousExecutions: false
+          payloadConditions: []
+          headerConditions: []
+          actions: []
+  inputYaml: |
+    pipeline:
+      identifier: registrationtest
+      properties:
+        ci:
+          codebase:
+            build:
+              type: branch
+              spec:
+                branch: <+trigger.branch>

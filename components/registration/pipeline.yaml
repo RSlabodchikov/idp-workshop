@@ -1,0 +1,47 @@
+pipeline:
+  name: registration-build
+  identifier: registrationbuild
+  projectIdentifier: XCloud
+  orgIdentifier: arloidp311org
+  description: Registration POC pipeline
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: rslabodchikov
+        build: <+input>
+  stages:
+    - stage:
+        name: Build
+        identifier: Build
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          caching:
+            enabled: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: build_gradle
+                  identifier: build_gradle
+                  spec:
+                    connectorRef: account.bootcampdockerhub
+                    image: gradle:8.8-jdk17
+                    shell: Sh
+                    command: cd $SERVICE_PATH && gradle build
+                    privileged: true
+                  description: Build app
+        variables:
+          - name: SERVICE_PATH
+            type: String
+            description: Path to service in repository
+            required: false
+            value: components/registration
