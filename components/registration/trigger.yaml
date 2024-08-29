@@ -21,13 +21,6 @@ trigger:
           payloadConditions: []
           headerConditions: []
           actions: []
-  inputYaml: |
-    pipeline:
-      identifier: registrationbuild
-      properties:
-        ci:
-          codebase:
-            build:
-              type: branch
-              spec:
-                branch: <+trigger.branch>
+  pipelineBranchName: <+trigger.branch>
+  inputSetRefs:
+    - registrationbuildinput
