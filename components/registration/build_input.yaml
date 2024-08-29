@@ -1,0 +1,14 @@
+inputSet:
+  name: registration-build-input
+  identifier: registrationbuildinput
+  orgIdentifier: arloidp311org
+  projectIdentifier: XCloud
+  pipeline:
+    identifier: registrationbuild
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
